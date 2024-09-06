@@ -17,7 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <h1>Zee&apos;s Cartoons</h1>
+          <h1>Zees Cartoons</h1>
+          {/* <h1>Zee&apos;s Cartoons</h1> */}
         </header>
         <nav>
           <Link href="/">Home</Link>
