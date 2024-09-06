@@ -6,6 +6,8 @@ import { redirect } from "next/navigation";
 export default function AddCartoon() {
   async function handleAddCartoon(formData) {
     "use server";
+    // add console log to see
+    console.log(formData);
     const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
     console.log("form action done");
 
@@ -28,7 +30,7 @@ export default function AddCartoon() {
       <h3>Add Cartoon</h3>
       <form action={handleAddCartoon}>
         <input name="username" placeholder="username" />
-        <input name="favourite cartoon" placeholder="favourite cartoon" />
+        <input name="favourite_cartoon" placeholder="favourite cartoon" />
         <button className="submitbutton">Submit</button>
       </form>
     </div>
