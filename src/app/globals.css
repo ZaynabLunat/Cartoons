@@ -1,33 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  align-items: center;
+  color: rgb(29, 59, 29);
+  background-color: greenyellow;
+  max-height: 9vh;
+}
+
+/* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 1rem;
+  row-gap: 20px; */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+nav:hover {
+  text-decoration: underline;
+}
+
+/* .footer {
+  display: flex;
+  align-items: flex-end;
+} */
+
+.image {
+  border: 1px red;
+}
+
+.formdata {
+  /* margin-top: 60px; */
+  margin-top: 22px;
+  color: rgb(29, 59, 29);
+  outline: 1px dotted green;
+  height: 200px;
+}
+
+/* .header2 {
+  outline: 1px dotted green;
+  height: 40px;
+  text-align: center;
+} */
+
+.footer {
+  position: absolute;
+  top: 10px;
+  margin-top: 800px;
+  background-color: greenyellow;
+  text-align: center;
+  align-self: centre;
+  width: 100vw;
+  height: 40px;
+}
+
+.row1 {
+  border: 1px red;
+}
+
+.row2 {
+  border: 1px green;
+}
+
+h3 {
+  color: blue;
+}
+
+#row1 {
+  border: 1px red;
 }
